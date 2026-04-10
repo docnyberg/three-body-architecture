@@ -1,0 +1,47 @@
+{
+  "n_data": 12,
+  "rs_drag_Mpc": 147.10129512995218,
+  "lcdm": {
+    "chi2": 21.150071324797,
+    "chi2_per_dof": 1.7625059437330834,
+    "n_params": 0
+  },
+  "w0wa": {
+    "chi2": 11.672759968606305,
+    "chi2_per_dof": 0.9727299973838588,
+    "w0": -0.7725176378153262,
+    "wa": -0.7899465919705106,
+    "n_params": 2,
+    "delta_chi2_vs_lcdm": 9.477311356190695,
+    "p_value": 0.008750401638743743,
+    "sigma": 2.621654786659633
+  },
+  "three_body": {
+    "chi2": 16.87021646112582,
+    "chi2_per_dof": 1.405851371760485,
+    "alpha": 0.2714507389631315,
+    "z_onset": 24.125,
+    "n_params": 1,
+    "delta_chi2_vs_lcdm": 4.279854863671179,
+    "p_value": 0.03856664130066689,
+    "sigma": 2.068781009114105
+  },
+  "information_criteria": {
+    "aic": {
+      "lcdm": 21.150071324797,
+      "w0wa": 15.672759968606305,
+      "three_body": 18.87021646112582
+    },
+    "bic": {
+      "lcdm": 21.150071324797,
+      "w0wa": 16.642573268182307,
+      "three_body": 19.355123110913823
+    }
+  },
+  "figures": [
+    "C:\\Users\\docny\\Projects\\THREE_BODY\\results\\desi_chi2_w0wa_contour.png",
+    "C:\\Users\\docny\\Projects\\THREE_BODY\\results\\desi_chi2_threebody_alpha.png",
+    "C:\\Users\\docny\\Projects\\THREE_BODY\\results\\desi_residuals_three_models.png",
+    "C:\\Users\\docny\\Projects\\THREE_BODY\\results\\desi_distance_redshift_models.png"
+  ]
+}

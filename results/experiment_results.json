@@ -1,0 +1,29 @@
+{
+  "phase1": {
+    "quotient_dim": 8,
+    "observable_dim": 16,
+    "local_product": 16,
+    "rank_D": 8,
+    "verified": true,
+    "status": "PASSED"
+  },
+  "phase2": {
+    "sigma_5_critical": 7.082956523674698e-63,
+    "sigma_critical": 3.7157194450551384e-13,
+    "lambda_compton_reduced": 3.8615926778787043e-13,
+    "ratio_to_compton": 0.9622245935830552,
+    "in_adler_window": true,
+    "S_dg_at_critical": 1.000000000000008e-30,
+    "status": "PASSED"
+  },
+  "phase3": {
+    "a_onset": 0.03981621803925187,
+    "z_onset": 24.11539390843635,
+    "max_residual": 0.7095003679477629,
+    "final_lcdm": 0.00045226822741577515,
+    "final_3body": 0.0001313837536532002,
+    "plot_path": "C:\\Users\\docny\\Projects\\THREE_BODY\\results\\three_body_architecture_results.png",
+    "residual_plot_path": "C:\\Users\\docny\\Projects\\THREE_BODY\\results\\chirped_residual.png",
+    "status": "PASSED"
+  }
+}

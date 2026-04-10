@@ -1,0 +1,18 @@
+{
+  "sigma8": 0.8110399577785952,
+  "k_range": [
+    0.0001,
+    1.9999999999999982
+  ],
+  "n_k_points": 500,
+  "z_onset": 24.12511175564933,
+  "a_onset": 0.0398008179913927,
+  "growth_suppression": 0.2904992683047612,
+  "k_onset": 1.8951392511202891,
+  "max_pk_residual_pct": -47.385981605852926,
+  "figures": [
+    "C:\\Users\\docny\\Projects\\THREE_BODY\\results\\camb_power_spectrum_comparison.png",
+    "C:\\Users\\docny\\Projects\\THREE_BODY\\results\\camb_growth_function_comparison.png",
+    "C:\\Users\\docny\\Projects\\THREE_BODY\\results\\camb_multi_redshift_pk.png"
+  ]
+}
