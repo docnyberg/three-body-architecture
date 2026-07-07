@@ -1,0 +1,23 @@
+{
+ "integrity_max_rel": 0.0,
+ "cases": {
+  "caseA": {
+   "dpp_k0.1_class_pct": -20.1762069750268,
+   "tier1_dpp_k0.1_pct": -9.2,
+   "max_abs_dTT_l2_30_pct": 31.997605892799175,
+   "dClpp_l40_pct": -15.882899143369078
+  },
+  "caseB": {
+   "dpp_k0.1_class_pct": -4.979269774326833,
+   "tier1_dpp_k0.1_pct": -6.3,
+   "max_abs_dTT_l2_30_pct": 53.23756745992241,
+   "dClpp_l40_pct": -42.6415102600883
+  },
+  "caseC": {
+   "dpp_k0.1_class_pct": 0.0,
+   "tier1_dpp_k0.1_pct": null,
+   "max_abs_dTT_l2_30_pct": 1800.1413853332579,
+   "dClpp_l40_pct": 1.5481553283791527e-05
+  }
+ }
+}

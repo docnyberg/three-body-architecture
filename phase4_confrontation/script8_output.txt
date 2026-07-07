@@ -1,0 +1,18 @@
+==============================================================================
+script8 — Tier-3 D3 template filter vs DESI DR1 LRG3 (z0.8-1.1, GCcomb)
+==============================================================================
+data vector: 72  covariance: (72, 72)  window: (72, 1047)
+theory grid: 349 pts, k in [0.001, 0.349] h/Mpc
+confirmed: bundle theory-side fiducial is a ZERO placeholder — building fiducial from CLASS t3base (see METHOD).
+BASELINE (CLASS fiducial, A0/A2 marginalized): chi2 = 48.9 / dof ~ 70  (A0=6.254, A2=2.544)
+
+case      Gamma0      eps  S(k=0.1)     Dchi2  dC_pp@40   verdict
+-----------------------------------------------------------------
+t3E        0.003    1e-06     -1.9%      -0.2     -1.4%   SURVIVES filter
+t3D         0.01    1e-06     -6.3%      -0.4     -4.4%   SURVIVES filter
+t3A         0.03    1e-06    -17.6%      -0.4    -12.7%   SURVIVES filter but phi-phi kills it
+t3F         0.01    1e-05     -0.2%      19.3     -4.4%   PRESSURED
+t3B          0.1    1e-05     -2.3%    1383.0    -35.0%   EXCLUDED (filter-grade)
+
+figures: fig8a_desi_p0_overlay, fig8b_dchi2_scan (+ script8_results.json)
+NOTE: filter-grade only — no EFT nuisances/AP/shot-noise freedom; desilike-grade earns entry ONLY on signal (ratified D3).

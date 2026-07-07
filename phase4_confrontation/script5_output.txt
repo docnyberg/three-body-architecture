@@ -1,0 +1,31 @@
+==========================================================================
+script5 — Tier 1 k-dependent growth (mode-dependent trigger, corrected baseline)
+==========================================================================
+Planck18: H0=67.36 Om_m=0.31377 Om_L=0.68614 Om_r=9.146e-05 ns=0.9649 mnu(CAMB)=0.0
+CAMB As tuned: 2.0411e-09  -> sigma8(0) = 0.8110 (target 0.811)
+Note: redshifts have been re-sorted (earliest first)
+BASELINE GATE @k=0.05 h/Mpc, z in [0,30]: max |ODE/CAMB - 1| = 4.949e-04  -> PASS (tol 0.005)
+
+scanning...
+  eps=1.0e-06 done (always-on)
+  eps=1.0e-05 done (z_onset = 2.84)
+  eps=1.0e-04 done (onset after today at k=0.1 (a_on=1.06); larger scales active)
+  eps=1.0e-03 done (onset after today at k=0.1 (a_on=2.36); larger scales active)
+  eps=1.0e-02 done (onset after today at k=0.1 (a_on=5.09); larger scales active)
+  eps=1.0e-01 done (onset after today at k=0.1 (a_on=10.97); larger scales active)
+  eps=1.0e+00 done (onset after today at k=0.1 (a_on=23.63); larger scales active)
+  eps=1.0e+01 done (onset after today at k=0.1 (a_on=50.91); larger scales active)
+  eps=1.0e+02 done (onset after today at k=0.1 (a_on=109.68); larger scales active)
+
+==========================================================================
+TIER-1 SUMMARY
+==========================================================================
+gate: PASS (0.049% max dev)
+syllabus corner (Γ₀=6): ΔP/P(k=0.1,z=0) spans [-99.9%, +0.0%] over ε grid
+parameter points in the 'interesting window' (1%–15% |ΔP/P| @k=0.1): 4 of 63
+   Γ₀=0.01  ε=1e-06  ΔP/P=-3.2%
+   Γ₀=0.03  ε=1e-06  ΔP/P=-9.2%
+   Γ₀=0.03  ε=1e-05  ΔP/P=-1.9%
+   Γ₀=0.1   ε=1e-05  ΔP/P=-6.3%
+
+figures: fig5a_baseline_gate, fig5b_dP_over_P, fig5c_sigma8_scan, fig5d_fsigma8  (+ script5_scan_results.json)

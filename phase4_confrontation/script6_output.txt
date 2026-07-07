@@ -1,0 +1,15 @@
+==========================================================================
+script6 — Tier-2 CLASS analysis (patched class_public @ e858083)
+==========================================================================
+REAL off-state integrity (zero vs base): identical k-grid=True, max |P_zero/P_base - 1| = 0.000e+00 -> PASS (bitwise)
+caseA: CLASS ΔP/P(k=0.1,z=0) = -20.18%   [Tier-1 growth-ODE: -9.2%]
+caseB: CLASS ΔP/P(k=0.1,z=0) = -4.98%   [Tier-1 growth-ODE: -6.3%]
+caseC: CLASS ΔP/P(k=0.1,z=0) = +0.00%   [ISW probe]
+caseA: max |ΔC_l^TT|/C_l (lensed, 2<=l<=30) = 31.998%
+caseB: max |ΔC_l^TT|/C_l (lensed, 2<=l<=30) = 53.238%
+caseC: max |ΔC_l^TT|/C_l (lensed, 2<=l<=30) = 1800.141%
+caseA: ΔC_l^φφ/C_l^φφ at l=40 = -15.883%
+caseB: ΔC_l^φφ/C_l^φφ at l=40 = -42.642%
+caseC: ΔC_l^φφ/C_l^φφ at l=40 = +0.000%
+
+figures: fig6a_dPP_class, fig6b_TT_lowl, fig6c_clpp (+ script6_results.json)

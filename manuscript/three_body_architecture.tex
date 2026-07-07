@@ -45,8 +45,8 @@
 % ================================================================
 
 \title{Spontaneous Localization from Cosmological Geometry:\\
-A Parameter-Free Derivation of the Collapse Kernel,\\
-Thermodynamic Viability, and Falsifiable Cosmological Signature}
+A Parameter-Free Derivation of the Collapse Kernel\\
+and the Observational Exclusion of Its Cosmological Signature}
 
 \author{Brian C.\ Nyberg}
 \email{docnyberg@gmail.com}
@@ -73,18 +73,30 @@ Evaluating the continuous momentum injection reveals a violent
 $\sigma^{-5}$ ultraviolet divergence. We prove that balancing this
 microscopic heating against the macroscopic cosmological Ricci scalar
 tension $\lambdageo = \omegaP |\Rdim|$ mathematically forces a critical
-localization scale of $\sigcrit \approx 3.7 \times 10^{-13}$~meters---the
-electron Compton wavelength---satisfying LISA Pathfinder bounds with zero
-free parameters in the microscopic collapse dynamics (Theorem~III).
-Integrating this geometrically triggered friction into the perturbed
-Einstein--Boltzmann equations predicts a non-degenerate, chirped residual
-in the matter power spectrum, with onset at redshift $z \approx 24$
-coinciding with the epoch of Cosmic Dawn (Theorem~IV). Confrontation with
-DESI DR1 baryon acoustic oscillation measurements yields
-$\Delta\chi^2 = 4.28$ improvement over standard $\Lambda$CDM with a
-single effective coupling parameter, providing suggestive evidence that
-large-scale structure anomalies may constitute the macroscopic footprint
-of quantum wavepacket collapse.
+localization scale of $\sigcrit \approx 3.7 \times 10^{-13}$~meters---within
+$4\%$ of the reduced electron Compton wavelength---satisfying LISA
+Pathfinder bounds with zero free parameters in the microscopic collapse
+dynamics (Theorem~III). We then subject the geometrically thresholded
+friction to a four-tier cosmological confrontation: a gated $k$-resolved
+growth scan validated against CAMB; a modified Einstein--Boltzmann
+analysis (CLASS) applying the drag to cold dark matter under a strict
+causal sub-horizon guard ($k > aH$); a window-convolved comparison
+against the DESI~DR1 full-shape likelihoods in three LRG redshift bins;
+and a formal Planck PR4 lensing bandpower test. An earlier conjecture
+that the Heaviside onset would imprint a chirped oscillatory residual is
+retracted herein: with baryon--photon acoustic oscillations frozen since
+recombination, the signature is a scale-dependent, monotonic growth
+suppression. The data exclude every observationally distinguishable
+region of the $(\Gamma_0, \epsilon)$ parameter space---late-onset
+couplings by DESI shape sensitivity ($\Delta\chi^2$ up to $+3538$),
+strong always-on couplings by Planck lensing ($\Delta\chi^2$ up to
+$+249$). The surviving region, $\Gamma_0 \lesssim 0.01$ with
+$\epsilon \lesssim 10^{-6}$, is empirically indistinguishable from
+$\Lambda$CDM by construction, predicting only a uniform $1.5$--$5\%$
+lensing-power deficit---below current sensitivity but within reach of
+Simons Observatory and CMB-S4. The framework's cosmological signature is
+therefore either excluded or presently unobservable; we supply the
+forecast that will decide which.
 \end{abstract}
 
 \maketitle
@@ -161,15 +173,24 @@ problem. The momentum-space correlator derived from the geometric kernel
 produces a $\sigma^{-5}$ ultraviolet divergence. We prove that coupling
 the collapse rate to the contemporary cosmological Ricci scalar
 $\lambdageo = \omegaP |\Rdim|$ yields exact thermodynamic balance,
-forcing $\sigcrit \approx 3.7 \times 10^{-13}$~m---the electron Compton
-wavelength---without phenomenological adjustment.
+forcing $\sigcrit \approx 3.7 \times 10^{-13}$~m---within $4\%$ of the
+reduced electron Compton wavelength---without phenomenological
+adjustment.
 
-\textit{Section~\ref{sec:cosmological_signatures}} derives the observable
-consequence. Integrating the geometrically thresholded friction into the
-perturbed Einstein--Boltzmann equations generates a chirped residual in
-the matter power spectrum with onset at $z \approx 24$, coinciding with
-Cosmic Dawn. This non-degenerate signature is falsifiable against DESI
-and future spectroscopic surveys.
+\textit{Section~\ref{sec:cosmological_signatures}} derives the
+perturbation-level consequence: geometrically thresholded friction with
+onset at $z \approx 24$, coinciding with Cosmic Dawn. The signature is a
+scale-dependent, monotonic growth suppression; an earlier conjecture of
+a chirped oscillatory residual is retracted in that section, with the
+physical reason stated.
+
+\textit{Section~\ref{sec:confrontation}} confronts the mechanism with
+data across four tiers---a CAMB-gated $k$-resolved growth scan, a
+causally guarded CLASS implementation, the DESI~DR1 full-shape
+likelihoods, and the Planck PR4 lensing bandpowers---excluding all
+observationally distinguishable couplings and bounding the survivor.
+\textit{Section~\ref{sec:results}} revisits the earlier background-level
+BAO comparison in light of the direct test.
 
 % ================================================================
 % II. THE KINEMATIC QUOTIENT
@@ -566,40 +587,67 @@ dismantled.
 % V. COSMOLOGICAL SIGNATURES
 % ================================================================
 
-\section{Cosmological Signatures: The Chirped Residual}
+\section{Cosmological Signatures: Scale-Dependent Growth Suppression}
 \label{sec:cosmological_signatures}
 
 \subsection{Modified perturbation equations}
 
 The geometric collapse mechanism, once activated, modifies the standard
 $\Lambda$CDM growth equation for matter density perturbations
-$\delta_k(a)$. In the sub-horizon limit, the standard equation:
+$\delta_k(a)$. In the sub-horizon, matter-dominated limit the standard
+equation reads
 \begin{equation}
-\delta'' + \frac{3}{a}\delta' - \frac{3}{2a^2}\delta = 0
+\delta'' + \frac{3}{2a}\delta' - \frac{3}{2a^2}\delta = 0,
 \label{eq:lcdm_growth}
 \end{equation}
-is modified by the geometric kinetic friction:
+whose growing mode is the textbook $\delta \propto a$. (An earlier
+preprint of this work carried the friction coefficient $3/a$ in
+Eq.~\eqref{eq:lcdm_growth}, which yields $\delta \propto a^{0.58}$;
+the error was caught in independent review and is corrected here. All
+numerical results in this paper use the general form
+$\delta'' + [\,3/a + \mathrm{d}\ln H/\mathrm{d}a\,]\delta' -
+(3/2a^2)\,\Omega_m(a)\,\delta = 0$, which reduces to
+Eq.~\eqref{eq:lcdm_growth} in the Einstein--de Sitter limit.) The
+geometric kinetic friction modifies the damping term:
 \begin{equation}
-\delta'' + \left(\frac{3}{a} + \Gamma_{\mathrm{geo}}(a)\right)\delta'
+\delta'' + \left(\frac{3}{2a} + \Gamma_{\mathrm{geo}}(k,a)\right)\delta'
 - \frac{3}{2a^2}\delta = 0,
 \label{eq:modified_growth}
 \end{equation}
-where the geometric friction is a Heaviside step function:
+where the friction is a Heaviside step function per mode:
 \begin{equation}
-\Gamma_{\mathrm{geo}}(a) = \frac{\Gamma_0}{a}\,
-\Theta\!\left(\Rth - \mathcal{R}(a)\right).
+\Gamma_{\mathrm{geo}}(k,a) = \frac{\Gamma_0}{a}\,
+\Theta\!\left(r^3\,\mathcal{R}(a) - \epsilon\right)\,
+\Theta\!\left(k - aH\right),
+\qquad r = a\,\frac{2\pi}{k},
 \label{eq:geometric_friction}
 \end{equation}
-The friction activates abruptly when the evolving Ricci scalar
-$\mathcal{R}(a)$ drops below the geometric threshold $\Rth$, at which
-point the macroscopic curvature is sufficiently weak to permit mesoscopic
-localization. The threshold value $\Rth$ is fixed by the thermodynamic
-balance of Section~\ref{sec:thermodynamic_viability}: $\Rth$ is the
-dimensionless Ricci scalar at which $S_{\Delta g}(\sigcrit) =
-S_{\mathrm{LISA}}$, i.e., the epoch when the universe's expansion rate
-first permits localization at the critical scale without violating
-experimental heating bounds. Evaluating $\mathcal{R}(a)$ at $\sigcrit$
-saturation yields $\Rth \approx 1.5 \times 10^4$.
+with $r$ the proper mode scale in Hubble units. Two refinements over the
+scalar threshold $\Theta(\Rth - \mathcal{R})$ of the original proposal
+are physically mandatory. First, localization is a \emph{scale-local}
+process: the trigger must compare the mode's proper volume against the
+ambient curvature, $r^3 \mathcal{R}(a) > \epsilon$, which makes the
+onset epoch $k$-dependent (largest scales first) and the observable
+signature scale-dependent. Second, a causal sub-horizon guard
+$k > aH$ forbids drag on super-horizon modes, which a localized
+mechanism cannot causally touch; in practice this guard reduced an
+apparent factor-19 low-$\ell$ CMB distortion at the strongest coupling
+to a factor of~8 without changing any exclusion verdict
+(Sec.~\ref{sec:confrontation})---a verdict that survives its own
+refinement. Because no algebraic derivation of the coupling
+$(\Gamma_0, \epsilon)$ from the $J$-balanced quotient space has survived
+interrogation, both are treated as free parameters to be constrained by
+data.
+For a mode of proper scale $r$, the friction activates when the
+product $r^3 \mathcal{R}(a)$ first exceeds $\epsilon$: since
+$r^3\mathcal{R} = 3\,(2\pi/k)^3(\Omega_m + 4\Omega_\Lambda a^3)$ grows
+monotonically with $a$, each mode switches on once, largest scales
+first. The scalar-threshold picture of the original
+proposal---activation when $\mathcal{R}(a)$ drops below
+$\Rth \approx 1.5 \times 10^4$, the value anchored by the thermodynamic
+saturation condition $S_{\Delta g}(\sigcrit) = S_{\mathrm{LISA}}$ of
+Section~\ref{sec:thermodynamic_viability}---is recovered as the
+fixed-$\epsilon/r^3$ limit and sets the characteristic onset epoch.
 
 \subsection{Cosmic Dawn onset}
 
@@ -621,7 +669,9 @@ it is determined by the intersection of the thermodynamic saturation
 condition (Eq.~\eqref{eq:sigma5_bound}) with the cosmological background
 evolution.
 
-\subsection{The chirped residual}
+\subsection{Character of the signature: monotonic suppression
+(chirp conjecture retracted)}
+\label{sec:chirp_retraction}
 
 Equations~\eqref{eq:lcdm_growth} and~\eqref{eq:modified_growth} are
 integrated numerically using an implicit Runge--Kutta method (Radau IIA)
@@ -633,52 +683,252 @@ from $a = 10^{-3}$ to $a = 1$. The fractional residual
 \end{equation}
 is shown in Fig.~\ref{fig:growth_function}.
 
-Because the friction acts as a Heaviside step function, it delivers an
-abrupt kick to the acoustic oscillator at $a_{\mathrm{onset}}$. Standard
-$\Lambda$CDM parameter variations (spectral index $n_s$, dark energy
-equation of state $w$) produce smooth, broadband amplitude tilts. The
-geometric trigger instead generates a \textit{frequency-drifting phase
-shift}---a chirped ringing that standard cosmology cannot replicate.
+An earlier version of this work conjectured that the Heaviside onset
+would deliver an impulsive kick to the baryon acoustic oscillator,
+imprinting a frequency-drifting (``chirped'') phase shift in the matter
+power spectrum. \textbf{That conjecture was wrong, and we retract it}
+for three reasons established in independent adversarial review and
+confirmed numerically. First, baryon--photon acoustic oscillations
+froze at recombination ($z \approx 1100$); at the friction onset
+($z \approx 24$) no temporal acoustic oscillator survives for the step
+to phase-kick---the BAO pattern is a fossilized spatial imprint, and
+late-time friction can modulate its amplitude but cannot re-excite it.
+Second, a step change in a damping \emph{coefficient} produces a
+continuous, kinked amplitude evolution, not a velocity impulse; a phase
+discontinuity would require a delta function in the forcing term.
+Third, direct integration confirms the residual $\Delta(a)$ is strictly
+monotonic after onset (a single sign crossing, zero oscillations).
+The physical signature of the mechanism is therefore a
+\emph{scale-dependent, monotonic growth suppression}: modes activate
+largest-scale-first per Eq.~\eqref{eq:geometric_friction}, producing a
+suppression edge in $P(k)$ that slides with $\epsilon$, superimposed on
+a near-uniform amplitude deficit for always-on modes. This is the
+testable content confronted with data in
+Section~\ref{sec:confrontation}.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{camb_power_spectrum_comparison.png}
-\caption{Matter power spectrum at $z = 0$. \textit{Top:} Standard
-$\Lambda$CDM (solid blue, CAMB with Planck 2018 parameters,
-$\sigma_8 = 0.811$) compared with the Three-Body Architecture
-(dashed red). \textit{Bottom:} Fractional residual
-$\Delta P/P$, showing growth suppression building at small scales
-(high~$k$) due to the geometric friction activated at Cosmic Dawn
-($z \approx 24$).}
+\caption{Matter power spectrum at $z = 0$ in the $k$-independent
+(scalar-threshold) limit at the historical reference coupling
+$\Gamma_0 = 6$. \textit{Top:} Standard $\Lambda$CDM (solid blue, CAMB
+with Planck 2018 parameters, $\sigma_8 = 0.811$) compared with the
+Three-Body Architecture (dashed red). \textit{Bottom:} Fractional
+residual $\Delta P/P$ from friction activated at Cosmic Dawn
+($z \approx 24$). This coupling strength is shown for illustration of
+the mechanism; it is excluded by the data confrontation of
+Sec.~\ref{sec:confrontation}.}
 \label{fig:power_spectrum}
 \end{figure}
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{camb_growth_function_comparison.png}
-\caption{Linear growth function $D(a)$. \textit{Top:} Standard
-$\Lambda$CDM (solid blue) diverges from the Three-Body solution
-(dashed red) at the geometric friction onset $a \approx 0.040$
-($z \approx 24$, Cosmic Dawn, gray dotted line). \textit{Bottom:}
-Growth suppression residual $\Delta D/D$, reaching $-71\%$ at $a = 1$
-(present day). The sharp onset is a Heaviside signature that standard
-$\Lambda$CDM parameter variations cannot replicate.}
+\caption{Linear growth function $D(a)$ at the historical reference
+coupling $\Gamma_0 = 6$. \textit{Top:} Standard $\Lambda$CDM (solid
+blue) diverges from the Three-Body solution (dashed red) at the
+geometric friction onset $a \approx 0.040$ ($z \approx 24$, Cosmic
+Dawn, gray dotted line). \textit{Bottom:} Growth suppression residual
+$\Delta D/D$, reaching $-71\%$ at $a = 1$; note the strictly monotonic
+post-onset evolution (Sec.~\ref{sec:chirp_retraction}). This coupling
+strength is excluded in Sec.~\ref{sec:confrontation}.}
 \label{fig:growth_function}
 \end{figure}
 
-This non-degenerate signature constitutes a falsifiable prediction: if
-the chirped residual is absent in high-precision spectroscopic surveys
-(DESI~\cite{DESI2024}, Euclid~\cite{Euclid2024}), the geometric collapse
-architecture is excluded. If present, it represents direct observational
-evidence for objective wavefunction collapse driven by cosmological
-geometry.
+The scale-dependent suppression constitutes a falsifiable prediction,
+and Section~\ref{sec:confrontation} carries out the falsification
+program: the mechanism is confronted, at full Boltzmann fidelity and
+against published survey likelihoods, across the entire
+$(\Gamma_0, \epsilon)$ plane.
 
 % ================================================================
-% VI. CONFRONTATION WITH DESI DR1 BAO
+% VI. FOUR-TIER COSMOLOGICAL CONFRONTATION (2026-07 campaign)
 % ================================================================
 
-\section{Confrontation with DESI DR1 BAO}
+\section{Four-Tier Cosmological Confrontation}
+\label{sec:confrontation}
+
+We now test the perturbation-level mechanism of
+Section~\ref{sec:cosmological_signatures} directly---the confrontation
+the framework itself demands, since the growth equation is what it
+actually derives. The campaign proceeded in four tiers, each gated so
+that no downstream result is reported unless its upstream validation
+passed.
+
+\subsection{Pipeline and gates}
+
+\emph{Tier 1 (gated growth scan).} A $k$-resolved integration of
+Eq.~\eqref{eq:modified_growth} over a $(\Gamma_0, \epsilon)$ grid,
+with a hard entry gate: with $\Gamma_0 = 0$ the pipeline must reproduce
+the CAMB linear growth ratio $D(z)/D(0)$ to better than $0.5\%$ over
+$0 \le z \le 30$. The gate initially \emph{failed} at $0.58\%$---a
+massive-neutrino mismatch between the Boltzmann baseline and the
+$\nu$-less growth equation---and no friction results were reported from
+that configuration; the consistent $\nu$-less pair then passed at
+$0.049\%$. (Neutrino robustness is restored explicitly in
+Sec.~\ref{sec:hardening}.)
+
+\emph{Tier 2 (full Boltzmann).} The drag of
+Eq.~\eqref{eq:geometric_friction} was implemented in the
+Einstein--Boltzmann solver CLASS~\cite{CLASS2011} as a multiplicative
+modification of the Hubble drag in the cold-dark-matter Euler equation
+(Newtonian gauge, where $\theta_{\mathrm{cdm}}$ is dynamical),
+CDM-only in this pass. Patch integrity is established bitwise: with
+$\Gamma_0 = 0$ the modified binary reproduces vanilla CLASS output
+identically at every wavenumber. The causal guard $k > aH$ was added in
+a second iteration under a regression gate (guard off $\equiv$ first
+iteration, numerically); the guard collapsed the low-$\ell$ temperature
+distortion of the strongest coupling from $1800\%$ to $725\%$ while
+leaving every exclusion verdict intact.
+
+\emph{Tier 3 (survey data).} The suppression ratios
+$S(k,z) = P_{\mathrm{3B}}/P_{\Lambda\mathrm{CDM}}$ from the guarded
+CLASS runs, evaluated at each bin's effective redshift, were confronted
+with the published DESI~DR1 full-shape likelihood
+bundles~\cite{DESI2024FS}: the $P_0/P_2$ data vectors, full systematic
+covariances, and---critically---the release's own window matrices, so
+the theory is window-convolved with the survey's machinery. The model
+enters as a two-amplitude generalized least-squares fit ($A_0$, $A_2$
+absorbing the Kaiser bias/RSD combinations per multipole), so that
+$\Delta\chi^2$ isolates \emph{shape} information. Baseline goodness of
+fit validates the apparatus: $\chi^2/\mathrm{dof} = 48.9/70$, $75.7/70$,
+and $75.1/70$ in the three LRG bins.
+
+\emph{Tier 4 (hardening).} Three referee-facing extensions, reported in
+Sec.~\ref{sec:hardening}: the joint three-bin DESI filter, fully
+$\nu$-restored CLASS runs ($N_{\mathrm{ncdm}} = 1$, $m_\nu = 0.06$~eV),
+and a formal Planck PR4 lensing bandpower
+$\chi^2$~\cite{CarronPR42022} replacing any qualitative lensing
+statement (nine bandpowers, $8 \le L \le 400$, amplitude method against
+the release fiducial; null sanity $\chi^2 = 9.33/9$).
+
+\subsection{Results}
+\label{sec:hardening}
+
+Table~\ref{tab:confrontation} presents the hardened verdicts.
+
+\begin{table}[t]
+\centering
+\caption{Four-tier confrontation verdicts. DESI: joint
+$\Delta\chi^2$ over three LRG full-shape bins (window-convolved,
+amplitude-marginalized). Planck: formal PR4 lensing bandpower
+$\Delta\chi^2$ (amplitude method). All runs sub-horizon-guarded,
+CDM-only drag. Verdicts are identical between $\nu$-less and
+$\nu$-restored pipelines (shifts $\le 19\%$ on near-zero entries,
+$\le 2\%$ on decisive ones).}
+\label{tab:confrontation}
+\begin{tabular}{ccrrl}
+\toprule
+$\Gamma_0$ & $\epsilon$ & DESI $\Delta\chi^2$ & Planck $\Delta\chi^2$ & Verdict \\
+\midrule
+0.003 & $10^{-6}$ & $-0.0$ & $-0.8$ & survives (both) \\
+0.01  & $10^{-6}$ & $+0.4$ & $+1.3$ & survives (both) \\
+0.03  & $10^{-6}$ & $+5.1$ & $+32.5$ & excluded (Planck) \\
+0.01  & $10^{-5}$ & $+35.7$ & $+0.8$ & excluded (DESI) \\
+0.10  & $10^{-5}$ & $+3538$ & $+249$ & excluded (both) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig8a_desi_p0_overlay.pdf}
+\caption{DESI DR1 LRG ($0.8 < z < 1.1$, GCcomb) monopole against
+window-convolved suppression models (amplitude-marginalized). The
+baseline fit ($\chi^2 = 48.9/70$) validates the apparatus; the
+$\epsilon = 10^{-5}$ family's suppression edge inside the fitted window
+is unabsorbable, while the $\epsilon \le 10^{-6}$ family is degenerate
+with the bias amplitude.}
+\label{fig:desi_filter}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig10_planck_lensing.pdf}
+\caption{Planck PR4 lensing bandpower amplitudes (relative to the
+release fiducial) against the guarded-CLASS suppression predictions
+($\nu$-restored set). Strong always-on couplings that evade $P(k)$
+drain $C_L^{\phi\phi}$ by $10$--$40\%$ and are excluded; the surviving
+corner predicts a uniform $1.5$--$5\%$ deficit---the Simons
+Observatory / CMB-S4 target.}
+\label{fig:planck_filter}
+\end{figure}
+
+Two complementary executioners emerge. \emph{DESI shape sensitivity}
+destroys any coupling whose activation edge falls inside the fitted
+window ($\epsilon \gtrsim 10^{-5}$): the suppression cliff is an
+unabsorbable distortion of $P(k)$, and the joint three-bin statistic
+sharpens a single-bin ``pressured'' case ($+19.3$) into an exclusion
+($+35.7$). \emph{Planck lensing amplitude} destroys any strong
+always-on coupling ($\epsilon \lesssim 10^{-6}$,
+$\Gamma_0 \gtrsim 0.03$): such couplings evade $P(k)$ entirely---their
+near-uniform suppression is absorbed by the bias-amplitude
+marginalization \emph{by construction}---but drain the lensing
+potential by $10$--$40\%$ against a few-percent measurement. The
+low-$\ell$ temperature spike ($725\%$ at the historical
+$\Gamma_0 = 6$) independently eliminates the large-$\epsilon$
+``pushed-cliff'' escape.
+
+\subsection{Verdict and forecast}
+\label{sec:verdict}
+
+The surviving region is
+\begin{equation}
+\Gamma_0 \lesssim 0.01, \qquad \epsilon \lesssim 10^{-6},
+\label{eq:sliver}
+\end{equation}
+with combined $\Delta\chi^2 \approx +1.7$ at its upper edge. This
+region is \emph{empirically indistinguishable from $\Lambda$CDM by
+construction}: its always-on, near-uniform suppression lives entirely
+inside the bias-normalization degeneracy of galaxy clustering, and its
+absolute-amplitude effects sit at or below current lensing sensitivity.
+The allowed region is contiguous with---and includes---$\Gamma_0 = 0$:
+the data impose an upper bound and no detection. At no point in the
+$(\Gamma_0, \epsilon)$ plane does the mechanism improve any fit.
+
+The surviving corner nonetheless makes one sharp prediction: a uniform
+$1.5$--$5\%$ deficit in the lensing potential power
+$C_L^{\phi\phi}$ (mean amplitude $0.985$--$0.950$ across
+$8 \le L \le 400$). This is below Planck PR4 sensitivity but squarely
+within the projected reach of Simons Observatory~\cite{SimonsObs2019}
+and CMB-S4~\cite{CMBS42016} lensing measurements. Next-generation
+lensing will therefore either detect a uniform few-percent
+$\phi\phi$ deficit or close this corner entirely: the framework's
+cosmological signature is either excluded or presently unobservable,
+and the forecast above decides which.
+
+\emph{Stated limitations.} The Tier-3 filter is a shape test with
+amplitude marginalization, not a full-likelihood analysis: EFT
+counterterms, Alcock--Paczynski distortion, and shot-noise freedom are
+not marginalized; bin effective redshifts are approximated by mid-bin
+values; the drag is CDM-only; the Planck test omits the PR4 linear
+correction and exact bin windows (subdominant against tens-of-percent
+signals). None of these refinements plausibly reverses a $+3538$ or
+$+249$; a full \texttt{desilike}-grade analysis is warranted only if a
+future variant of the mechanism shows positive signal at filter grade,
+which none did here.
+
+% ================================================================
+% VII. BACKGROUND-LEVEL BAO COMPARISON (SUPERSEDED)
+% ================================================================
+
+\section{Background-Level BAO Comparison, Superseded by the Direct Test}
 \label{sec:results}
+
+An earlier stage of this program compared the mechanism with DESI~DR1
+at the \emph{background} level, through an effective
+$H_{\mathrm{eff}}(z)$ parameterization bridged by a coupling $\alpha$
+that the framework does not derive. We retain that comparison here for
+completeness and transparency, with its conclusion now subordinated to
+the direct perturbation-level test of
+Section~\ref{sec:confrontation}: the modest background-level preference
+reported below \emph{does not survive} confrontation with the
+observables the framework actually predicts. No algebraic derivation of
+$\alpha$ has withstood adversarial interrogation (a proposed
+quotient-space identification $\alpha = 5/18$ was rejected as a
+back-fit), and the perturbation-level couplings that remain viable in
+Eq.~\eqref{eq:sliver} are far too weak to generate the background
+modification fitted here.
 
 To evaluate the cosmological viability of the Three-Body Architecture, we
 confront the predicted distance-redshift relations against the Dark Energy
@@ -780,11 +1030,19 @@ at $z = 0$ growing to $+1.1\%$ at $z = 1$.}
 \section{Discussion}
 \label{sec:discussion}
 
-The results demonstrate a suggestive alignment between the predictions
-of the Three-Body Architecture and the observed mid-redshift tensions
-in large-scale structure surveys. However, it is essential to distinguish
-between the first-principles derivations within this framework and the
-effective parameterizations required for cosmological integration.
+The four-tier confrontation of Section~\ref{sec:confrontation} is the
+central empirical result of this work: the perturbation-level mechanism
+the framework derives is excluded everywhere it is observationally
+distinguishable from $\Lambda$CDM, and the region that survives does so
+precisely because it predicts nothing current instruments can see. The
+earlier background-level BAO preference
+(Section~\ref{sec:results}) illustrates a methodological lesson worth
+stating plainly: an effective parameterization bridged to the data by
+an underived coupling can manufacture mild statistical preference that
+the underlying mechanism, tested directly, does not possess. It remains
+essential to distinguish between the first-principles derivations
+within this framework and the effective parameterizations required for
+cosmological integration.
 
 In Section~\ref{sec:kinematic_quotient}, the spatial decoherence
 functional and the continuous momentum injection were derived rigorously
@@ -800,16 +1058,20 @@ $\alpha = 0.271$ effectively bridges the microscopic localization
 scale and the macroscopic fluid equations, but it currently operates
 as a free parameter constrained by the data.
 
-The primary advantage of this architecture over CPL models is physical
-prediction. Where $w_0 w_a$ acts as a flexible mathematical net to
-capture data anomalies~\cite{DESI2024DE}, the geometric framework asserts a physical
-mechanism: the universe's expansion tension must drop below a critical
-threshold ($\lambdageo = \omegaP |\Rdim|$) to permit localized
-wavepacket collapse. This natively predicts an onset scale of
-$z \approx 24$, providing a theoretical justification for
-\textit{when} standard $\Lambda$CDM dynamics should begin to
-experience anomalous friction. The $w_0 w_a$ parameterization offers
-no such prediction---it can accommodate any onset redshift.
+What distinguishes this architecture from phenomenological nets such as
+$w_0 w_a$~\cite{DESI2024DE} is that it makes rigid predictions---an
+onset epoch ($z \approx 24$) and a signature shape (scale-ordered,
+monotonic suppression)---and rigid predictions can be executed.
+Executed, they were: the very rigidity that once made the mechanism
+attractive as an explanation of large-scale-structure anomalies is what
+allowed DESI shape sensitivity and Planck lensing amplitude to act as
+complementary executioners across the entire detectable parameter
+plane. A flexible parameterization can retreat; a mechanism cannot. We
+regard this as the correct epistemic outcome of a physical proposal:
+the framework's cosmological sector now stands falsified at all
+detectable couplings, with one sharply quantified survivor whose fate
+next-generation lensing will decide
+(Section~\ref{sec:verdict}).
 
 The coincidence $\sigcrit \approx \bar{\lambda}_e$ raises the question
 of whether the electron mass itself has a geometric origin within this
@@ -826,9 +1088,9 @@ We have presented a geometric framework that links continuous spontaneous
 localization to macroscopic cosmological expansion. By eliminating the
 ad hoc smearing parameter of standard collapse models in favor of a
 geometric metric variance, we derived an exact thermodynamic balance
-that forces a critical localization scale matching the electron Compton
-wavelength. The argument proceeds through four mutually reinforcing
-results:
+that forces a critical localization scale within $4\%$ of the reduced
+electron Compton wavelength. The argument proceeds through four
+results---three constructive, one adjudicative:
 
 \begin{enumerate}
 \item \textbf{Kinematic completeness.} The $J$-balanced quotient space
@@ -842,32 +1104,41 @@ functional from high-dimensional measure concentration
 
 \item \textbf{Thermodynamic viability.} The $\sigma^{-5}$ UV divergence
 is exactly balanced by cosmological Ricci suppression, forcing
-$\sigcrit \approx 3.7 \times 10^{-13}$~m with zero free parameters
+$\sigcrit \approx 3.7 \times 10^{-13}$~m---within $4\%$ of the reduced
+electron Compton wavelength---with zero free parameters
 (Eq.~\eqref{eq:sigma_critical}).
 
-\item \textbf{Falsifiable cosmological signature.} The geometrically
-thresholded friction produces a chirped residual in the matter power
-spectrum with onset at Cosmic Dawn ($z \approx 24$), distinguishable
-from $\Lambda$CDM.
+\item \textbf{Cosmological falsification with a quantified survivor.}
+The geometrically thresholded friction produces a scale-dependent,
+monotonic growth suppression (an earlier chirp conjecture is retracted
+in Sec.~\ref{sec:chirp_retraction}). A four-tier confrontation---gated
+growth scan, causally guarded CLASS implementation, DESI~DR1
+full-shape likelihoods in three LRG bins, and formal Planck PR4
+lensing bandpowers---excludes every observationally distinguishable
+coupling (Table~\ref{tab:confrontation}). The surviving region,
+$\Gamma_0 \lesssim 0.01$ with $\epsilon \lesssim 10^{-6}$, is
+indistinguishable from $\Lambda$CDM by construction and includes
+$\Gamma_0 = 0$.
 \end{enumerate}
 
-When implemented into an Einstein--Boltzmann solver and confronted with
-DESI DR1 BAO data, this thresholded localization provides a natural
-onset scale consistent with observed mid-redshift anomalies, achieving
-$\Delta\chi^2 = 4.28$ improvement over standard $\Lambda$CDM with a
-single parameter (Table~\ref{tab:chi2}). While the phenomenological
-$w_0 w_a$ model provides a tighter absolute fit, it requires two free
-parameters and offers no physical mechanism for the onset of dark energy
-evolution.
+The earlier background-level BAO comparison (Table~\ref{tab:chi2}),
+which showed a modest single-parameter preference through an underived
+$H_{\mathrm{eff}}(z)$ bridge, does not survive the direct
+perturbation-level test and is retained only for transparency. At no
+point in the confrontation did the mechanism improve any fit against
+real data. What remains is one sharp, dated prediction: the surviving
+corner implies a uniform $1.5$--$5\%$ deficit in $C_L^{\phi\phi}$,
+below Planck PR4 sensitivity but within reach of Simons Observatory and
+CMB-S4. Next-generation lensing will either detect that deficit or
+close the framework's cosmological sector entirely.
 
-Future work must focus on three objectives: (i)~closing the
-parameterization gap by deriving $\alpha$ from the Jordan algebra
-coupling constants, eliminating the final free variable; (ii)~full
-implementation in CLASS~\cite{CLASS2011} or CAMB~\cite{CAMB2000} with
-complete neutrino and radiation physics; and (iii)~confrontation with
-DESI full-shape $f\sigma_8$ measurements, which probe the growth
-function directly and thus test the perturbation-level prediction
-without the background parameterization bridge.
+Future work must focus on three objectives: (i)~a
+\texttt{desilike}-grade joint likelihood only if any future variant of
+the mechanism shows positive filter-grade signal; (ii)~extension of the
+drag to baryons and exploration of the massive-neutrino interplay
+beyond the robustness check performed here; and (iii)~the Simons
+Observatory / CMB-S4 lensing test of the surviving corner, which is
+decisive.
 
 \begin{acknowledgments}
 This work was developed through sustained engagement with the foundational
@@ -920,6 +1191,32 @@ $P(k)$ residual: $-47.4\%$ at $k = 2.0$~$h$/Mpc.
 
 Scripts and output data are archived at
 \texttt{THREE\_BODY/results/experiment\_results.json}.
+
+\textit{Phase~4 (Sec.~\ref{sec:confrontation}, Table~\ref{tab:confrontation}).}
+The four-tier confrontation is fully scripted and deterministic; every
+number in Table~\ref{tab:confrontation} regenerates from a rerunnable
+script beside a fetched public dataset. Tier~1:
+\texttt{script5\_kdep\_growth.py} (CAMB~v1.6.6 baseline gate at
+$0.049\%$; $(\Gamma_0,\epsilon)$ scan). Tier~2: CLASS at commit
+\texttt{e858083}, patched via \texttt{class\_tier2\_patch.py}
+(environment-variable controlled drag on
+$\theta_{\mathrm{cdm}}$; gcc-constructor initialization; bitwise
+off-state identity verified in \texttt{script6}; sub-horizon guard
+added under a numerical regression gate in \texttt{script7}). Tier~3:
+\texttt{script8\_desi\_template\_filter.py} against the DESI~DR1
+full-shape likelihood bundles (public release; $P_0/P_2$ vectors,
+systematic covariances, window matrices; the release's theory-side
+fiducial arrays are zero placeholders, so the fiducial is built from
+the guarded CLASS baseline at each bin redshift). Tier~4:
+\texttt{script9\_hardening\_analysis.py} (three-bin joint filter;
+$\nu$-restored robustness) and \texttt{script10\_planck\_lensing\_chi2.py}
+(Planck PR4 lensing bandpowers and covariance from the public PR4
+release~\cite{CarronPR42022}; amplitude method; null sanity
+$\chi^2 = 9.33/9$). The complete pipeline---scripts, run outputs,
+verdict tables, figure sources, and data-fetch instructions for the
+public DESI and Planck products---is deposited in
+\texttt{phase4\_confrontation/} of the repository cited in the
+Acknowledgments.
 
 \textit{Phase~3C (Table~\ref{tab:chi2}).} DESI DR1 BAO data (12
 measurements, full $12 \times 12$ covariance matrix) from the Cobaya
