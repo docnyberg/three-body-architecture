@@ -889,13 +889,60 @@ $(\Gamma_0, \epsilon)$ plane does the mechanism improve any fit.
 The surviving corner nonetheless makes one sharp prediction: a uniform
 $1.5$--$5\%$ deficit in the lensing potential power
 $C_L^{\phi\phi}$ (mean amplitude $0.985$--$0.950$ across
-$8 \le L \le 400$). This is below Planck PR4 sensitivity but squarely
-within the projected reach of Simons Observatory~\cite{SimonsObs2019}
-and CMB-S4~\cite{CMBS42016} lensing measurements. Next-generation
-lensing will therefore either detect a uniform few-percent
-$\phi\phi$ deficit or close this corner entirely: the framework's
-cosmological signature is either excluded or presently unobservable,
-and the forecast above decides which.
+$8 \le L \le 400$). This hides comfortably within the few-percent
+amplitude precision of Planck PR4 (the $+1.3$ entry of
+Table~\ref{tab:confrontation}), but not within the projected reach of
+the next generation. The Simons Observatory baseline configuration
+($f_{\mathrm{sky}} \approx 0.4$, quadratic-estimator reconstruction to
+$L_{\mathrm{max}} \approx 3000$) targets a lensing-amplitude
+determination at roughly the $1\%$ level~\cite{SimonsObs2019}; the
+CMB-S4 reference design ($\sim 1\,\mu$K-arcmin temperature noise,
+arcminute-scale beams, $f_{\mathrm{sky}} \approx 0.6$) targets roughly
+the $0.5\%$ level~\cite{CMBS42016}. Treating the predicted deficit as
+a pure amplitude shift against those projected uncertainties, the
+$1.5\%$ floor of the surviving corner is a ${\approx}1.5\sigma$ effect
+for Simons Observatory and a ${\approx}3\sigma$ exclusion for CMB-S4,
+while the $5\%$ upper edge exceeds $10\sigma$ for either instrument.
+
+Two parameter degeneracies could in principle shelter the deficit;
+both are closed. First, the optical depth: the lensing potential
+scales with the primordial amplitude $A_s$ directly, not the damped
+combination $A_s e^{-2\tau}$ constrained by the primary spectra, so a
+fit cannot heal an absolute lensing deficit by inflating $A_s$ without
+simultaneously retuning $\tau$---and projected large-angle
+polarization measurements ($\sigma(\tau) \approx 0.002$ from
+LiteBIRD~\cite{LiteBIRD2023}) pin the optical depth at the required
+level. Second, the summed neutrino mass---the natural suspect, since
+free-streaming massive neutrinos also suppress late-time
+growth---cannot cloak $\Gamma_0$, for three reasons. The two
+suppressions are \emph{additive}: a heavier neutrino background lowers
+the baseline $C_L^{\phi\phi}$ further and leaves \emph{less} viable
+amplitude space for geometric friction, not more. Oscillation
+experiments impose a hard floor $\sum m_\nu \ge 0.06$~eV (normal
+ordering)~\cite{Esteban2020}, so a fit cannot buy amplitude space for
+$\Gamma_0$ by driving the neutrino mass below its terrestrial minimum.
+And the suppression shapes are orthogonal: neutrino free-streaming
+imprints a scale-\emph{dependent} step in $P(k)$ confined to
+$k > k_{\mathrm{fs}}$, whereas the surviving
+$\epsilon \lesssim 10^{-6}$ drag engages every mode in the observed
+window and suppresses uniformly
+(Sec.~\ref{sec:cosmological_signatures}); a joint shape-sensitive
+(DESI full-shape) plus absolute-amplitude (SO/CMB-S4 $\phi\phi$)
+likelihood therefore separates the two effects morphologically. The
+$\nu$-restored runs of Table~\ref{tab:confrontation} already display
+this structure: decisive verdicts shift by $\le 2\%$ (the geometric
+distortion dwarfs the $0.06$~eV free-streaming step), and the
+$\le 19\%$ shifts appear only on near-zero $\Delta\chi^2$ entries,
+reflecting the slightly modified baseline growth rate rather than any
+genuine degeneracy.
+
+These are amplitude-significance estimates, not a full Fisher
+forecast; the orthogonality arguments above indicate that
+marginalization over $\sum m_\nu$ and $\tau$ would not materially
+degrade them. Next-generation lensing will therefore either detect a
+uniform few-percent $\phi\phi$ deficit or close this corner entirely:
+the framework's cosmological signature is either excluded or presently
+unobservable, and the forecast above decides which.
 
 \emph{Stated limitations.} The Tier-3 filter is a shape test with
 amplitude marginalization, not a full-likelihood analysis: EFT
@@ -1128,15 +1175,19 @@ perturbation-level test and is retained only for transparency. At no
 point in the confrontation did the mechanism improve any fit against
 real data. What remains is one sharp, dated prediction: the surviving
 corner implies a uniform $1.5$--$5\%$ deficit in $C_L^{\phi\phi}$,
-below Planck PR4 sensitivity but within reach of Simons Observatory and
-CMB-S4. Next-generation lensing will either detect that deficit or
-close the framework's cosmological sector entirely.
+below Planck PR4 sensitivity but a ${\approx}3\sigma$-to-$10\sigma$
+effect at the projected amplitude precision of Simons Observatory and
+CMB-S4---robust against the $A_s$--$\tau$ and $\sum m_\nu$
+degeneracies (Sec.~\ref{sec:verdict}). Next-generation lensing will
+either detect that deficit or close the framework's cosmological
+sector entirely.
 
 Future work must focus on three objectives: (i)~a
 \texttt{desilike}-grade joint likelihood only if any future variant of
 the mechanism shows positive filter-grade signal; (ii)~extension of the
 drag to baryons and exploration of the massive-neutrino interplay
-beyond the robustness check performed here; and (iii)~the Simons
+beyond the robustness check and degeneracy analysis presented here;
+and (iii)~the Simons
 Observatory / CMB-S4 lensing test of the surviving corner, which is
 decisive.
 
